@@ -61,10 +61,13 @@ Code: [extract_kabr.py](extract_kabr.py)
 ## Step 2: Model ADAE workloads 
 Use [change_points.py](change_points.py) to extract change points and arrival rates for the time-varying Poisson process.
 
-Visualize and analyze data with the [Jupyter notebook](plotting_ae_workloads.ipynb) provided.
+Visualize and analyze data with the [Jupyter notebook](PlotADAEWorkloads.ipynb) provided.
 
 
 ## 
 
 ![Figure: ADAE Studies in the Field](images/lit%20review%20graphics%20(3).png)
 Figure 2: ADAE Studies in the field using networks of camera traps and drones 
+
+## Acknowledgements
+This work was funded by the National Science Foundation (NSF) grant OAC-2112006 (ICICLE AI Institute).

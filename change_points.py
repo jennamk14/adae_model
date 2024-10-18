@@ -1,8 +1,8 @@
 # this script calculates the change points and arrival rates from ADAE traces
 
 # Define global variables
-TRACES = 'data/zebra_transitions.csv' # path to the csv file containing ADAE traces
-OUTPUTS = 'outputs/' # path to the directory to save the outputs
+TRACES = 'data/raw_data/zebra_transitions.csv' # path to the csv file containing ADAE traces
+OUTPUTS = 'data/outputs/' # path to the directory to save the outputs
 CP_THRESHOLDS = [0.8, 0.95, 0.99, 0.995] # thresholds for change points
 
 # import libraries
@@ -105,7 +105,7 @@ def plotArrivalTimes(arrival_times, df, name, outputs):
     plt.show()
     plt.savefig(outputs + name + '.png')
 
-def joinArrivalTimes(real_trace, simulated_trace):
+def joinArrivalTimes(arrival_times, real_trace, simulated_trace):
 
     # fill in missing time reconds with 0 for the counts
     time = pd.DataFrame(np.arange(0, max(arrival_times)), columns=['time'])
